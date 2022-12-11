@@ -16,32 +16,39 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header-container">
-        <div class="container nav-container">
-          <a class="logo-placeholder style-link" href="#"><span class="logo-span">Web</span>Studio</a>
+      <!-- ======================== HEADER START =========================== -->
+
+      <header>
+        <div class="container header-container">
+          <a class="logo" href="#"><span class="logo__span">Web</span>Studio</a>
           <nav class="navigation">
             <ul class="nav-links">
-              <li><a class="nav-link style-link curr-link" href="#">Agencja</a></li>
-              <li><a class="nav-link style-link" href="portfolio.html">Portfolio</a></li>
-              <li><a class="nav-link style-link" href="#">Kontakt</a></li>
+              <li><a class="nav-links__link style-link nav-links__link--current" href="#">Agencja</a></li>
+              <li><a class="nav-links__link style-link" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-links__link style-link" href="#">Kontakt</a></li>
+            </ul>
+            <ul class="nav-contacts">
+              <li>
+                <a class="nav-contacts__link style-link" href="mailto:info@devstudio.com">
+                  <svg class="nav-contacts__icon" width="16" height="16">
+                    <use href="images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="nav-contacts__link style-link" href="tel:+48111111111">
+                  <svg class="nav-contacts__icon" width="10" height="16">
+                    <use href="images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </li>
             </ul>
           </nav>
-          <a class="info-link mail-link style-link" href="mailto:info@devstudio.com">
-            <svg class="icon-nav" width="16" height="16">
-              <use href="images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="info-link tel-link style-link" href="tel:+48111111111">
-            <svg class="icon-nav" width="16" height="16">
-              <use href="images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
         </div>
       </header>
-
-      <!-- =================================================== -->
+      <!-- ======================== HEADER END =========================== -->
 
       <main>
         <!-- --------------------1st section in main------------------ -->
@@ -49,7 +56,7 @@
         <section class="showcase">
           <div class="container">
             <h1 class="showcase-h1">efektywne rozwiązania dla waszego biznesu</h1>
-            <button class="order-btn" type="button" data-modal-open>Zamów usługę</button>
+            <button class="button order-btn" type="button" data-modal-open>Zamów usługę</button>
 
             <!-- -----------------MODAL + FORM start----------- -->
 
@@ -95,7 +102,7 @@
                       Oświadczam iż akceptuję <a class="form-link-policy" href="#">Regulamin</a> i <a class="form-link-policy" href="#">Politykę Prywatności</a>
                     </label>
                   </div>
-                  <button class="btn-form" type="submit">Wyślij</button>
+                  <button class="button btn-form" type="submit">Wyślij</button>
                 </form>
               </div>
             </div>
@@ -339,10 +346,10 @@
 
       <!-- -------------------------FOOTER--------------- -->
 
-      <footer class="foot">
+      <footer>
         <div class="container footer-container">
           <div class="footer-contacts">
-            <a class="logo-placeholder logo-down style-link" href="#"><span class="logo-span">Web</span>Studio</a>
+            <a class="logo logo-down" href="#"><span class="logo__span">Web</span>Studio</a>
             <address class="adres">
               <ul class="adres-list">
                 <li>
@@ -350,8 +357,8 @@
                     m. Warszawa, Aleje Jerozolimskie 21
                   </a>
                 </li>
-                <li><a class="info-link transparent footer-link style-link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="info-link transparent footer-link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="transparent footer-link style-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="transparent footer-link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
               </ul>
             </address>
           </div>
@@ -384,7 +391,7 @@
             <h3 class="footer-social-h3">zapisz się do newslettera</h3>
             <form class="footer-form">
               <input class="input-newsletter-footer" type="email" name="input-newsletter-footer" placeholder="E-mail" />
-              <button class="btn-footer-form" type="submit">
+              <button class="button btn-footer-form" type="submit">
                 Zapisz się
                 <svg class="icon-send" width="24" height="24">
                   <use href="images/icons.svg#icon-send"></use>
