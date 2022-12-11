@@ -47,7 +47,7 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(to bottom, var(--showcase-bg), var(--showcase-bg)), url(../images/showcase.png);
+  background-image: linear-gradient(to bottom, var(--showcase-bg), var(--showcase-bg)), url(../images/showcase.jpg);
 }
 
 .team {
