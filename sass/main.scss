@@ -1,6 +1,6 @@
-@import "utils/variables.scss";
-@import "components/page-header";
-@import "components/showcase";
-@import "components/main";
-@import "components/footer";
-@import "components/portfolio";
+@use "utils/variables.scss" as *;
+@use "components/page-header" as *;
+@use "components/showcase" as *;
+@use "components/main" as *;
+@use "components/footer" as *;
+@use "components/portfolio" as *;
