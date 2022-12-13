@@ -1,1 +1,15 @@
 @use "../utils/variables.scss" as *;
+@use "../utils/mixins" as *;
+
+.showcase-h1 {
+  display: block;
+  margin: 0px auto 30px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 700px;
+}

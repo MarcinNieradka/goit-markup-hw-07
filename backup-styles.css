@@ -13,11 +13,29 @@
   --showcase-bg: rgba(47, 48, 58, 0.4);
   --social-bg-color: rgb(255 255 255 / 0.1);
   --default-icon-color: #afb1b8;
-  --portfolio-overlay-color: rgb(33 150 243/ 0.9);
+  --portfolio-bg-color: rgb(33 150 243/ 0.9);
   --about-bg-color: rgb(47 48 58 / 0.8);
   --semi-transparent: rgb(0 0 0 /0.5);
   --form-semi-transparent: rgb(117 117 117 / 0.5);
   --form-border-color: rgba(33, 33, 33, 0.2);
+}
+/* * {
+  margin: 0;
+} */
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--font-main-color);
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
 }
 
 /* =====================================  Background colors ======================================= */
@@ -46,6 +64,12 @@
 
 /* ============================================= Links ======================================== */
 
+.style-link {
+  /* transition-property: color; */
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-contacts__link--transparent {
   color: var(--font-transparent);
 }
@@ -58,6 +82,22 @@
 
 .underline-link {
   text-decoration: underline;
+}
+
+.nav__link.nav__link--current {
+  color: var(--hover-bg-color);
+  position: relative;
+}
+
+.nav__link--current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -32px;
+  right: 0;
+  border-radius: 2px;
+  background: var(--hover-bg-color);
 }
 
 /* .curr-link:hover::after {
@@ -312,7 +352,12 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.policy-link {
+.logo__span,
+.policy-link,
+.logo:hover,
+.logo:focus,
+.style-link:hover,
+.style-link:focus {
   color: var(--hover-bg-color);
 }
 
@@ -373,7 +418,7 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--color-white);
-  background: var(--portfolio-overlay-color);
+  background: var(--portfolio-bg-color);
   /* transition-property: transform; */
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -384,6 +429,20 @@
 }
 
 /* ============================================== ICONS =========================== */
+
+svg {
+  display: inline-block;
+}
+
+.nav__contact-icon {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin-right: 5px;
+  /* margin: 0;
+  padding: 0; */
+  /* --color3: currentColor; */
+  fill: currentColor;
+}
 
 .teammate-socials__icon-placeholder {
   width: 44px;
@@ -445,6 +504,71 @@
 }
 
 /* ===================================== Font colors, sizes and weight =========================== */
+
+.logo {
+  /* display: inline-block; */
+  color: var(--color-black);
+  font-family: "Raleway";
+  font-style: normal;
+  /* font-weight: 700; - only this weight is loaded with Google Fonts, therefore there is no need to specify it*/
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* background-color: #212121; */ /*  -------- only to temporary preview box area*/
+  /* vertical-align: middle; */
+}
+
+.logo-footer {
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: yellow; */ /*  ------ only to temporary preview box area*/
+  /* vertical-align: middle; */
+}
+
+.nav__link {
+  /* display: block; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--font-main-color);
+}
+
+.nav__contact-link:hover .nav__contact-icon {
+  animation: animateY-10 1000ms 1;
+}
+
+.nav__contact-link {
+  display: flex;
+  align-items: center;
+  color: var(--font-secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  /* vertical-align: middle; */
+}
+
+.showcase-h1 {
+  display: block;
+  margin: 0px auto 30px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 700px;
+}
 
 .section-h2 {
   font-size: 36px;
@@ -554,6 +678,57 @@
 }
 
 /* ====================================== CONTAINERS + FLEXBOX ============================================ */
+
+.wrapper {
+  width: 1600px;
+  margin: auto;
+}
+
+.header__container {
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin: 0; */
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+  /* background-color: #2196f3; */
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+/* .about-section {
+  background-color: yellow;
+} */
+
+.header {
+  border-bottom: 1px solid var(--nav-border-color);
+  background-color: aqua;
+  padding: 24px 0px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  /* margin: 0; */
+  width: 254px;
+  justify-content: space-between;
+  /* margin-right: 371px; */
+  /* margin-left: 93px; */
+}
+
+.nav__contacts {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
 
 .about-list {
   display: flex;
