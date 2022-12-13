@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -65,39 +66,39 @@
                 <button class="modal__close-button" data-modal-close>&times;</button>
                 <h3 class="modal__header-h3">Zostaw swoje dane w formularzu poniżej</h3>
                 <form class="main-form">
-                  <div class="main-form__container">
-                    <label class="main-form__label" for="user-name">
+                  <div class="main-form__box">
+                    <label class="main-form__label" for="u-name">
                       <svg class="main-form__icon" width="15" height="15">
                         <use href="images/icons.svg#icon-form-user"></use>
                       </svg>
                       Imie
                     </label>
-                    <input class="main-form__input" type="text" name="u-name" id="user-name" />
+                    <input class="main-form__input" type="text" name="user-name" id="u-name" />
                   </div>
-                  <div class="main-form__container">
-                    <label class="main-form__label" for="user-telephone">
+                  <div class="main-form__box">
+                    <label class="main-form__label" for="u-telephone">
                       <svg class="main-form__icon" width="15" height="15">
                         <use href="images/icons.svg#icon-form-tel"></use>
                       </svg>
                       Telefon
                     </label>
-                    <input class="main-form__input" type="tel" name="u-telephone" id="user-telephone" />
+                    <input class="main-form__input" type="tel" name="user-telephone" id="u-telephone" />
                   </div>
-                  <div class="main-form__container">
-                    <label class="main-form__label" for="user-email">
+                  <div class="main-form__box">
+                    <label class="main-form__label" for="u-email">
                       <svg class="main-form__icon" width="15" height="15">
                         <use href="images/icons.svg#icon-form-mail"></use>
                       </svg>
                       Email
                     </label>
-                    <input class="main-form__input" type="email" name="u-email" id="user-email" />
+                    <input class="main-form__input" type="email" name="user-email" id="u-email" />
                   </div>
-                  <div class="main-form__container">
-                    <label class="main-form__label" for="user-comment">Komentarz</label>
-                    <textarea class="main-form__textarea" name="u-comment" id="user-comment" placeholder="Wprowadź tekst"></textarea>
+                  <div class="main-form__box">
+                    <label class="main-form__label" for="u-comment">Komentarz</label>
+                    <textarea class="main-form__textarea" name="user-comment" id="u-comment" placeholder="Wprowadź tekst"></textarea>
                   </div>
                   <div class="main-form__policy-text">
-                    <input class="main-form__checkbox main-form__checkbox--hidden" type="checkbox" name="u-checkbox" id="form-checkbox" />
+                    <input class="main-form__checkbox main-form__checkbox--hidden" type="checkbox" name="user-checkbox" id="form-checkbox" />
                     <label for="form-checkbox">
                       Oświadczam iż akceptuję <a class="policy-link" href="#">Regulamin</a> i <a class="policy-link" href="#">Politykę Prywatności</a>
                     </label>
@@ -305,36 +306,36 @@
 
         <!-- -------------4th section in main----------- -->
 
-        <section class="clients section">
+        <section class="section">
           <div class="container">
             <h2 class="section-h2">Nasi klienci</h2>
-            <ul class="client-list">
-              <li class="client-icon">
+            <ul class="clients-list">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="41" height="47">
                   <use href="images/icons.svg#icon-group01"></use>
                 </svg>
               </li>
-              <li class="client-icon">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="40" height="52">
                   <use href="images/icons.svg#icon-group02"></use>
                 </svg>
               </li>
-              <li class="client-icon">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="44" height="42">
                   <use href="images/icons.svg#icon-group03"></use>
                 </svg>
               </li>
-              <li class="client-icon">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="85" height="41">
                   <use href="images/icons.svg#icon-group04"></use>
                 </svg>
               </li>
-              <li class="client-icon">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="63" height="46">
                   <use href="images/icons.svg#icon-group05"></use>
                 </svg>
               </li>
-              <li class="client-icon">
+              <li class="clients-list__icon-placeholder">
                 <svg class="icon" width="94" height="44">
                   <use href="images/icons.svg#icon-group06"></use>
                 </svg>
@@ -346,41 +347,46 @@
 
       <!-- -------------------------FOOTER--------------- -->
 
-      <footer>
+      <footer class="footer">
         <div class="container footer-container">
           <div class="footer-contacts">
-            <a class="logo logo-down" href="#"><span class="logo__span">Web</span>Studio</a>
-            <address class="adres">
-              <ul class="adres-list">
+            <a class="logo logo-footer" href="#"><span class="logo__span">Web</span>Studio</a>
+            <address class="footer-contacts__adress-box">
+              <ul class="footer-contacts__adress-list">
                 <li>
-                  <a class="where-to style-link" href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA" target="_blank" rel="noopener nofollow noreferrer">
+                  <a
+                    class="footer-contacts__adress-link style-link"
+                    href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
                     m. Warszawa, Aleje Jerozolimskie 21
                   </a>
                 </li>
-                <li><a class="transparent footer-link style-link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="transparent footer-link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="footer-contacts__link footer-contacts__link--transparent style-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="footer-contacts__link footer-contacts__link--transparent style-link" href="tel:+48111111111">+48 111 111 111</a></li>
               </ul>
             </address>
           </div>
-          <div class="footer-social-div">
-            <h3 class="footer-social-h3">dołącz do nas</h3>
-            <ul class="footer-social-list">
-              <li class="footer-social-icon">
+          <div class="footer-socials">
+            <h3 class="footer-h3">dołącz do nas</h3>
+            <ul class="footer-socials__list">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -388,12 +394,12 @@
             </ul>
           </div>
           <div class="footer-newsletter">
-            <h3 class="footer-social-h3">zapisz się do newslettera</h3>
+            <h3 class="footer-h3">zapisz się do newslettera</h3>
             <form class="footer-form">
-              <input class="input-newsletter-footer" type="email" name="input-newsletter-footer" placeholder="E-mail" />
-              <button class="button btn-footer-form" type="submit">
+              <input class="footer-form__newsletter-input" type="email" name="newsletter-input-footer" placeholder="E-mail" />
+              <button class="button footer-form__button" type="submit">
                 Zapisz się
-                <svg class="icon-send" width="24" height="24">
+                <svg class="icon footer-form__icon--rotate" width="24" height="24">
                   <use href="images/icons.svg#icon-send"></use>
                 </svg>
               </button>

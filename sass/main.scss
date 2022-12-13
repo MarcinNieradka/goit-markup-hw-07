@@ -4,3 +4,7 @@
 @use "components/main" as *;
 @use "components/footer" as *;
 @use "components/portfolio" as *;
+
+body {
+  @extend %font-main-body;
+}

@@ -18,27 +18,27 @@
     <div class="wrapper">
       <!-- ======================== HEADER START =========================== -->
 
-      <header>
-        <div class="container header-container">
+      <header class="header">
+        <div class="container header__container">
           <a class="logo" href="#"><span class="logo__span">Web</span>Studio</a>
-          <nav class="navigation">
-            <ul class="nav-links">
-              <li><a class="nav-links__link style-link" href="index.html">Agencja</a></li>
-              <li><a class="nav-links__link style-link nav-links__link--current" href="#">Portfolio</a></li>
-              <li><a class="nav-links__link style-link" href="#">Kontakt</a></li>
+          <nav class="nav">
+            <ul class="nav__links">
+              <li><a class="nav__link style-link" href="index.html">Agencja</a></li>
+              <li><a class="nav__link style-link nav__link--current" href="#">Portfolio</a></li>
+              <li><a class="nav__link style-link" href="#">Kontakt</a></li>
             </ul>
-            <ul class="nav-contacts">
+            <ul class="nav__contacts">
               <li>
-                <a class="nav-contacts__link style-link" href="mailto:info@devstudio.com">
-                  <svg class="nav-contacts__icon" width="16" height="16">
+                <a class="nav__contact-link style-link" href="mailto:info@devstudio.com">
+                  <svg class="nav__contact-icon" width="16" height="16">
                     <use href="images/icons.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com
                 </a>
               </li>
               <li>
-                <a class="nav-contacts__link style-link" href="tel:+48111111111">
-                  <svg class="nav-contacts__icon" width="10" height="16">
+                <a class="nav__contact-link style-link" href="tel:+48111111111">
+                  <svg class="nav__contact-icon" width="10" height="16">
                     <use href="images/icons.svg#icon-smartphone"></use>
                   </svg>
                   +48 111 111 111
@@ -54,126 +54,126 @@
         <div class="container">
           <!-- -------------Section for button to filter portfolio--------------  -->
 
-          <section class="filtr-portfolio">
-            <ul class="portfolio-buttons">
-              <li><button class="filter-btn" type="button">Wszystkie</button></li>
-              <li><button class="filter-btn" type="button">Strony</button></li>
-              <li><button class="filter-btn" type="button">Aplikacje</button></li>
-              <li><button class="filter-btn" type="button">Dizajn</button></li>
-              <li><button class="filter-btn" type="button">Marketing</button></li>
+          <section class="portfolio-filter">
+            <ul class="portfolio-filter__buttons-list">
+              <li><button class="portfolio-filter__button" type="button">Wszystkie</button></li>
+              <li><button class="portfolio-filter__button" type="button">Strony</button></li>
+              <li><button class="portfolio-filter__button" type="button">Aplikacje</button></li>
+              <li><button class="portfolio-filter__button" type="button">Dizajn</button></li>
+              <li><button class="portfolio-filter__button" type="button">Marketing</button></li>
             </ul>
           </section>
 
           <!-- ------------Portfolio section, images with descriptions--------- -->
 
           <section class="portfolio">
-            <ul class="portfolio-list">
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+            <ul class="portfolio__items-list">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-01.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Technocrack</h3>
-                  <p class="portfolio-description">Strona internetowa</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Technocrack</h3>
+                  <p class="portfolio__description">Strona internetowa</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-02.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Grafika New Orlean vs Golden Star</h3>
-                  <p class="portfolio-description">Dizajn</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Grafika New Orlean vs Golden Star</h3>
+                  <p class="portfolio__description">Dizajn</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-03.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Grafika New Orlean vs Golden Star</h3>
-                  <p class="portfolio-description">Aplikacja</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Grafika New Orlean vs Golden Star</h3>
+                  <p class="portfolio__description">Aplikacja</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-04.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Projekt Prime</h3>
-                  <p class="portfolio-description">Marketing</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Projekt Prime</h3>
+                  <p class="portfolio__description">Marketing</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-05.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Projekt Boxes</h3>
-                  <p class="portfolio-description">Aplikacja</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Projekt Boxes</h3>
+                  <p class="portfolio__description">Aplikacja</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-06.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Inspiration has no Borders</h3>
-                  <p class="portfolio-description">Strona internetowa</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Inspiration has no Borders</h3>
+                  <p class="portfolio__description">Strona internetowa</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-07.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Magazyn Limited Edition</h3>
-                  <p class="portfolio-description">Dizajn</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Magazyn Limited Edition</h3>
+                  <p class="portfolio__description">Dizajn</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-08.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Projekt LAB</h3>
-                  <p class="portfolio-description">Marketing</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Projekt LAB</h3>
+                  <p class="portfolio__description">Marketing</p>
                 </div>
               </li>
-              <li class="portfolio-item">
-                <div class="portfolio-box">
+              <li class="portfolio__item">
+                <div class="portfolio__img-box">
                   <img src="images/portfolio/portfolio-09.jpg" alt="Picture of website with some people" width="370" height="294" />
-                  <div class="portfolio-overlay">
+                  <div class="portfolio__img-overlay">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   </div>
                 </div>
-                <div class="portfolio-text-container">
-                  <h3 class="portfolio-title">Growing Business</h3>
-                  <p class="portfolio-description">Aplikacja</p>
+                <div class="portfolio__text-box">
+                  <h3 class="portfolio__title">Growing Business</h3>
+                  <p class="portfolio__description">Aplikacja</p>
                 </div>
               </li>
             </ul>
@@ -183,41 +183,46 @@
 
       <!-- -------------------------FOOTER--------------- -->
 
-      <footer>
+      <footer class="footer">
         <div class="container footer-container">
           <div class="footer-contacts">
-            <a class="logo logo-down" href="#"><span class="logo-span">Web</span>Studio</a>
-            <address class="adres">
-              <ul class="adres-list">
+            <a class="logo logo-footer" href="#"><span class="logo__span">Web</span>Studio</a>
+            <address class="footer-contacts__adress-div">
+              <ul class="footer-contacts__adress-list">
                 <li>
-                  <a class="where-to style-link" href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA" target="_blank" rel="noopener nofollow noreferrer">
+                  <a
+                    class="footer-contacts__adress-link style-link"
+                    href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
                     m. Warszawa, Aleje Jerozolimskie 21
                   </a>
                 </li>
-                <li><a class="info-link transparent footer-link style-link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="info-link transparent footer-link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="footer-contacts__link footer-contacts__link--transparent style-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="footer-contacts__link footer-contacts__link--transparent style-link" href="tel:+48111111111">+48 111 111 111</a></li>
               </ul>
             </address>
           </div>
-          <div class="footer-social-div">
-            <h3 class="footer-social-h3">dołącz do nas</h3>
-            <ul class="footer-social-list">
-              <li class="footer-social-icon">
+          <div class="footer-socials">
+            <h3 class="footer-h3">dołącz do nas</h3>
+            <ul class="footer-socials__list">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="footer-social-icon">
+              <li class="footer-socials__icon-placeholder">
                 <svg class="icon" width="20" height="20">
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -225,12 +230,12 @@
             </ul>
           </div>
           <div class="footer-newsletter">
-            <h3 class="footer-social-h3">zapisz się do newslettera</h3>
+            <h3 class="footer-h3">zapisz się do newslettera</h3>
             <form class="footer-form">
-              <input class="input-newsletter-footer" type="email" name="input-newsletter-footer" placeholder="E-mail" />
-              <button class="button btn-footer-form" type="submit">
+              <input class="footer-form__newsletter-input" type="email" name="newsletter-input-footer" placeholder="E-mail" />
+              <button class="button footer-form__button" type="submit">
                 Zapisz się
-                <svg class="icon-send" width="24" height="24">
+                <svg class="icon footer-form__icon--rotate" width="24" height="24">
                   <use href="images/icons.svg#icon-send"></use>
                 </svg>
               </button>
