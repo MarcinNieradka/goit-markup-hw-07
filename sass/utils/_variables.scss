@@ -20,3 +20,19 @@ $form-border-color: rgba(33, 33, 33, 0.2);
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--font-main-color);
 }
+
+/* ====================== ANIMATIONS ================== */
+
+@keyframes animateY-10 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
