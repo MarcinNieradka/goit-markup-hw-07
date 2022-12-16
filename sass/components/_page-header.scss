@@ -33,11 +33,11 @@
 
 .nav__link {
   /* display: block; */
+  color: $font-main-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $font-main-color;
 
   &.nav__link--current {
     color: $hover-bg-color;
@@ -65,7 +65,7 @@
 .nav__contact-link {
   display: flex;
   align-items: center;
-  color: var(--font-secondary-color);
+  color: $font-secondary-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,6 +80,6 @@
 .nav__contact-icon {
   /* display: inline-block; */
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 10px;
   fill: currentColor;
 }

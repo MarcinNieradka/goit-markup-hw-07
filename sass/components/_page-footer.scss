@@ -16,6 +16,7 @@
 
 .footer-h3 {
   color: $color-white;
+  font-weight: 700; /* default */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -53,6 +54,7 @@
   }
 
   &__link {
+    font-weight: 400; /* default ?*/
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

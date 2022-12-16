@@ -16,9 +16,11 @@ $semi-transparent: rgb(0 0 0 /0.5);
 $form-semi-transparent: rgb(117 117 117 / 0.5);
 $form-border-color: rgba(33, 33, 33, 0.2);
 
+/* ==================== PLACEHOLDERS =======================*/
+
 %font-main-body {
   font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--font-main-color);
+  color: $font-main-color;
 }
 
 /* ====================== ANIMATIONS ================== */

@@ -2,6 +2,8 @@
 @use "../utils/mixins" as *;
 
 .section-h2 {
+  color: $font-main-color;
+  font-weight: 700; /* default*/
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -29,6 +31,8 @@
   }
 
   &__title-h3 {
+    color: $font-main-color;
+    font-weight: 700; /* default */
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -38,6 +42,7 @@
 
   &__article {
     color: $font-secondary-color;
+    font-weight: 400; /* default ?*/
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -64,6 +69,12 @@
   }
 
   &__description {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    /* ---------------------- sprawdzic powyzej*/
     position: absolute;
     display: flex;
     justify-content: center;
@@ -72,7 +83,7 @@
     height: 70px;
     bottom: 0;
     background: $about-bg-color;
-    color: $color-white;
+
     text-transform: uppercase;
   }
 }
@@ -99,6 +110,7 @@
   }
 
   &__name {
+    color: $font-main-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -109,6 +121,7 @@
 
   &__job {
     color: $font-secondary-color;
+    font-weight: 400; /* default ?*/
     font-size: 16px;
     line-height: 1.19;
     /* text-align: center; */
