@@ -15,11 +15,7 @@
 }
 
 .footer-h3 {
-  color: $color-white;
-  font-weight: 700; /* default */
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font-mixin($color-white, 700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 20px;
@@ -27,72 +23,61 @@
 
 .footer-contacts {
   width: 246px;
+}
 
-  &__adress-area {
-    font-style: normal;
-    margin-top: 20px;
+.footer-contacts__adress-area {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-contacts__adress-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  // padding: 0;
+  /* margin-left: 215px; */
+
+  > li:not(:last-child) {
+    margin-bottom: 10px;
   }
+}
 
-  &__adress-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    // padding: 0;
-    /* margin-left: 215px; */
+.footer-contacts__adress-link {
+  @include font-mixin($color-white, 400, 14px, 2, 0.03em);
+}
 
-    > li:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__adress-link {
-    color: $color-white;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.03em;
-  }
-
-  &__link {
-    font-weight: 400; /* default ?*/
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    &--transparent {
-      color: $font-transparent;
-    }
-  }
+.footer-contacts__link {
+  @include font-mixin($font-transparent, 400, 14px, 1.71, 0.03em);
 }
 
 .footer-socials {
   margin-left: 70px;
+}
 
-  &__list {
+.footer-socials__list {
+  color: $color-white;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials__icon-placeholder {
+  width: 44px;
+  height: 44px;
+  background-color: $social-bg-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition-property: color, background-color; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $hover-bg-color;
     color: $color-white;
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-  }
-
-  &__icon-placeholder {
-    width: 44px;
-    height: 44px;
-    background-color: $social-bg-color;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* transition-property: color, background-color; */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      background-color: $hover-bg-color;
-      color: $color-white;
-      /* can do formule for hoverfocus for icons*/
-    }
+    /* can do formule for hoverfocus for icons*/
   }
 }
 
@@ -103,37 +88,37 @@
 .footer-form {
   display: flex;
   gap: 12px;
+}
 
-  &__newsletter-input {
-    background-color: transparent;
-    padding-left: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: $color-white;
-    width: 358px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-form__newsletter-input {
+  background-color: transparent;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $color-white;
+  width: 358px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      outline: none;
-      border: 1px solid $hover-bg-color;
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $hover-bg-color;
   }
+}
 
-  &__icon--rotate {
-    transform: rotate(0deg);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.footer-form__icon--rotate {
+  transform: rotate(0deg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &__button {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
+.footer-form__button {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
 
-    &:hover .footer-form__icon--rotate {
-      transform: rotate(360deg);
-    }
+  &:hover .footer-form__icon--rotate {
+    transform: rotate(360deg);
   }
 }

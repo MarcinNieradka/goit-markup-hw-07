@@ -23,6 +23,11 @@ $form-border-color: rgba(33, 33, 33, 0.2);
   color: $font-main-color;
 }
 
+%form-color-transitions {
+  outline: none;
+  border: 1px solid $hover-bg-color;
+}
+
 /* ====================== ANIMATIONS ================== */
 
 @keyframes animateY-10 {
