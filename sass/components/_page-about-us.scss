@@ -3,11 +3,6 @@
 
 .section-h2 {
   @include font-mixin($font-main-color, 700, 36px, 1.17, 0.03em);
-  // color: $font-main-color;
-  // font-weight: 700;       /* ---------- default*/
-  // font-size: 36px;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
   text-align: center;
   margin: 0 auto 50px auto; /* 0 deletes spac between divs*/
 }
@@ -34,23 +29,13 @@
 
 .about-list__title-h3 {
   @include font-mixin($font-main-color, 700, 14px, 1.14, 0.03em);
-  // color: $font-main-color;
-  // font-weight: 700; /* ----------- default */
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 30px;
 }
 
 .about-list__article {
+  padding-top: 10px;
   @include font-mixin($font-secondary-color, 400, 14px, 1.71, 0.03em);
-  // padding-top: 20px;
-  // color: $font-secondary-color;
-  // font-weight: 400; /* ----------- default ?*/
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
 }
 
 /* ========================== WHAT WE DO ================= */
@@ -100,7 +85,6 @@
 .team-list {
   display: flex;
   list-style: none;
-  padding: 0;
   margin: 0; /* ------------ !!!!!!!!! deletes empty space between main and footer*/
   justify-content: space-between;
   text-align: center;
@@ -129,6 +113,7 @@
 
 .team-list__job {
   @include font-mixin($font-secondary-color, 400, 16px, 1.19, 0.03em);
+  padding: 10px 0 16px 0;
   /* text-align: center; */
 }
 
@@ -136,7 +121,6 @@
   padding: 0 32px;
   list-style: none;
   display: flex;
-  /* background-color: #2196f3; */
   justify-content: space-between;
 }
 

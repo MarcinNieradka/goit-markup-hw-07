@@ -33,12 +33,13 @@
 .footer-contacts__adress-list {
   display: flex;
   flex-direction: column;
+
   list-style: none;
   // padding: 0;
   /* margin-left: 215px; */
 
   > li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 }
 

@@ -106,10 +106,9 @@
 
 .portfolio__title {
   @include font-mixin($font-main-color, 700, 18px, 2, 0.06em);
-  margin: 0;
+  padding-bottom: 4px;
 }
 
 .portfolio__description {
   @include font-mixin($font-secondary-color, 400, 16px, 1.875, 0.03em);
-  margin: 0;
 }
