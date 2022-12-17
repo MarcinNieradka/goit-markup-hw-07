@@ -23,8 +23,8 @@
   &:focus {
     color: $hover-bg-color;
   }
-}
 
-.logo__span {
-  color: $hover-bg-color;
+  &__span {
+    color: $hover-bg-color;
+  }
 }

@@ -18,24 +18,24 @@
   > li {
     flex: 1; /* columns stay the same width no matter how much txt has one */
   }
-}
 
-.about-list__icon-placeholder {
-  padding: 25px 0;
-  text-align: center;
-  border-radius: 4px;
-  background-color: $bg-medium-color;
-}
+  &__icon-placeholder {
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: $bg-medium-color;
+  }
 
-.about-list__title-h3 {
-  @include font-mixin($font-main-color, 700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  padding-top: 30px;
-}
+  &__title-h3 {
+    @include font-mixin($font-main-color, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
 
-.about-list__article {
-  padding-top: 10px;
-  @include font-mixin($font-secondary-color, 400, 14px, 1.71, 0.03em);
+  &__article {
+    padding-top: 10px;
+    @include font-mixin($font-secondary-color, 400, 14px, 1.71, 0.03em);
+  }
 }
 
 /* ========================== WHAT WE DO ================= */
@@ -50,30 +50,30 @@
   list-style: none;
   margin: 0; /*  -------- deletes empyt space betweeen two divs*/
   justify-content: space-between;
-}
 
-.about-pic-list__offer {
-  position: relative;
-  display: flex;
-  text-align: center;
-}
+  &__offer {
+    position: relative;
+    display: flex;
+    text-align: center;
+  }
 
-.about-pic-list__description {
-  @include font-mixin($color-white, 700, 14px, 1.14, 0.03em);
-  // color: $color-white;
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  background: $about-bg-color;
-  text-transform: uppercase;
+  &__description {
+    @include font-mixin($color-white, 700, 14px, 1.14, 0.03em);
+    // color: $color-white;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: $about-bg-color;
+    text-transform: uppercase;
+  }
 }
 
 /* ======================= TEAM SECTION =============== */
@@ -102,19 +102,19 @@
       display: block;
     }
   }
-}
 
-.team-list__name {
-  @include font-mixin($font-main-color, 500, 16px, 1.19, 0.03em);
-  /* text-align: center; */
-  display: block;
-  padding-top: 30px;
-}
+  &__name {
+    @include font-mixin($font-main-color, 500, 16px, 1.19, 0.03em);
+    /* text-align: center; */
+    display: block;
+    padding-top: 30px;
+  }
 
-.team-list__job {
-  @include font-mixin($font-secondary-color, 400, 16px, 1.19, 0.03em);
-  padding: 10px 0 16px 0;
-  /* text-align: center; */
+  &__job {
+    @include font-mixin($font-secondary-color, 400, 16px, 1.19, 0.03em);
+    padding: 10px 0 16px 0;
+    /* text-align: center; */
+  }
 }
 
 .teammate-socials {
@@ -122,25 +122,25 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-}
 
-.teammate-socials__icon-placeholder {
-  width: 44px;
-  height: 44px;
-  /* background-color: initial; */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $default-icon-color;
-  /* transition-property: color, background-color; */
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-placeholder {
+    width: 44px;
+    height: 44px;
+    /* background-color: initial; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $default-icon-color;
+    /* transition-property: color, background-color; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    background-color: $hover-bg-color;
-    color: $color-white;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $hover-bg-color;
+      color: $color-white;
+    }
   }
 }
 
@@ -155,22 +155,22 @@
   /* text-align: center; */
   /* background-color: yellow*/ /*  --------- only to temporary preview box area*/
   color: $default-icon-color;
-}
 
-.clients-list__icon-placeholder {
-  /* background-color: burlywood; */ /*  --------- only to temporary preview box area*/
-  min-width: 170px;
-  height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-placeholder {
+    /* background-color: burlywood; */ /*  --------- only to temporary preview box area*/
+    min-width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    color: $hover-bg-color;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $hover-bg-color;
+    }
   }
 }
