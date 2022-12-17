@@ -77,7 +77,14 @@
     // letter-spacing: 0.02em;
     /* vertical-align: middle; */
 
-    &:hover .nav__contact-icon {
+    &:focus {
+      outline: none;
+      text-shadow: 0px 0px 1px $color-black;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .nav__contact-icon,
+    &:focus .nav__contact-icon {
       animation: animateY-10 1000ms 1;
     }
   }

@@ -29,6 +29,7 @@
 
     &:hover,
     &:focus {
+      outline: none;
       cursor: pointer;
       background-color: $hover-bg-color;
       color: $color-white;
@@ -63,11 +64,13 @@
 
     &:hover,
     &:focus {
+      outline: none;
       cursor: pointer;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &:hover .portfolio__img-overlay {
+    &:hover .portfolio__img-overlay,
+    &:focus .portfolio__img-overlay {
       transform: translateY(0);
     }
   }
